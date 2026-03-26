@@ -270,7 +270,7 @@ mermaid.initialize({ startOnLoad: true, theme: 'neutral' });
 <section id="creating-the-base-configuration" class="level3">
 <h3 class="anchored" data-anchor-id="creating-the-base-configuration">Creating the Base Configuration</h3>
 <p>First, let’s set up your main <code>application.properties</code> file with common configurations that apply to all environments:</p>
-<pre class="properties"><code># src/main/resources/application.properties
+<pre class="lang-none"><code># src/main/resources/application.properties
 
 # Application name and basic settings
 spring.application.name=my-spring-app
@@ -291,7 +291,7 @@ logging.pattern.console=%d{yyyy-MM-dd HH:mm:ss} - %msg%n</code></pre>
 <section id="development-profile-configuration" class="level3">
 <h3 class="anchored" data-anchor-id="development-profile-configuration">Development Profile Configuration</h3>
 <p>Create <code>application-dev.properties</code> for your local development environment:</p>
-<pre class="properties"><code># src/main/resources/application-dev.properties
+<pre class="lang-none"><code># src/main/resources/application-dev.properties
 
 # Local MySQL database configuration
 spring.datasource.url=jdbc:mysql://localhost:3306/myapp_dev
@@ -310,7 +310,7 @@ server.port=8080</code></pre>
 <section id="production-profile-configuration" class="level3">
 <h3 class="anchored" data-anchor-id="production-profile-configuration">Production Profile Configuration</h3>
 <p>Create <code>application-prod.properties</code> for your AWS Lightsail deployment:</p>
-<pre class="properties"><code># src/main/resources/application-prod.properties
+<pre class="lang-none"><code># src/main/resources/application-prod.properties
 
 # Production MySQL database configuration (will be set via environment variables)
 spring.datasource.url=${DB_URL:jdbc:mysql://localhost:3306/myapp_prod}
