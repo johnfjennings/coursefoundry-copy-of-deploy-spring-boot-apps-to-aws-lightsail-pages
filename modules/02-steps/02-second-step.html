@@ -79,7 +79,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link href="../../site_libs/quarto-html/quarto-syntax-highlighting-845c23b38eaddc0f92fda52bfe77a8c8.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-106cc9a5d57b44f6a083d0cc36163835.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-b0a6c22b1ce87eb98051d01fdea1be2d.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <link href="../../site_libs/quarto-contrib/naquiz-styles-1.0.4/buttons.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
@@ -312,7 +312,7 @@ mermaid.initialize({ startOnLoad: true, theme: 'neutral' });
 <h3 class="anchored" data-anchor-id="step-4-choose-instance-plan">Step 4: Choose Instance Plan</h3>
 <p>For a Spring Boot application with moderate traffic, select:</p>
 <ul>
-<li><strong>Instance plan</strong>: <strong>$10 USD/month</strong>
+<li><strong>Instance plan</strong>: <strong>€7/month</strong>
 <ul>
 <li>1 GB RAM</li>
 <li>1 vCPU<br>
@@ -423,8 +423,13 @@ OpenJDK 64-Bit Server VM (build 17.0.x+x-Ubuntu-x, mixed mode, sharing)</code></
 <li>Under <strong>Firewall</strong>, you’ll see the default rules</li>
 <li>Add the following rules by clicking <strong>“Add rule”</strong>:</li>
 </ol>
-<p><strong>Required Rules:</strong> - <strong>HTTP</strong>: Application = HTTP, Protocol = TCP, Port = 80 - <strong>HTTPS</strong>: Application = HTTPS, Protocol = TCP, Port = 443<br>
-- <strong>Custom</strong>: Application = Custom, Protocol = TCP, Port = 8080 (for testing Spring Boot directly)</p>
+<p><strong>Required Rules:</strong></p>
+<ul>
+<li><strong>HTTP</strong>: Application = HTTP, Protocol = TCP, Port = 80</li>
+<li><strong>HTTPS</strong>: Application = HTTPS, Protocol = TCP, Port = 443<br>
+</li>
+<li><strong>Custom</strong>: Application = Custom, Protocol = TCP, Port = 8080 (for testing Spring Boot directly)</li>
+</ul>
 <div class="callout callout-style-default callout-warning callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
